@@ -1,16 +1,47 @@
-import React, { useState } from "react";
+import React, { useRef,useState } from "react";
 import { motion } from "framer-motion";
 import { zoomInVariants, slideUpVariants } from "./animation";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    from_name: "",
     email: "",
-    phoneNo: "",
+    contactNo: "",
     message: "",
   });
+  const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  const handleSubmit = () => {};
+    emailjs
+      .sendForm("service_lnj8fjr", "template_lo213tu", form.current, {
+        publicKey: "RBNpPBoP1tnoXRM2c",
+      })
+      .then(
+        () => {
+          toast.success("we will reach you soon");
+        },
+        (error) => {
+          toast.error("server error");
+        }
+      );
+
+    // console.log(formData);
+
+    // toast.success("Thank you");
+
+    setFormData({
+      from_name: "",
+      email: "",
+      contactNo: "",
+      message: "",
+    });
+  };
+
+  
   return (
     <div id="contact" className="bg-white">
       <div
@@ -49,7 +80,9 @@ const Contact = () => {
           variants={slideUpVariants}
           className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6 "
         >
+          {/* form */}
           <motion.form
+            ref={form}
             onSubmit={handleSubmit}
             initial="hidden"
             whileInView={"visible"}
@@ -57,24 +90,46 @@ const Contact = () => {
             className="flex flex-col justify-center items-start gap-4 w-full"
           >
             <input
-              name="name"
-              value={formData.name}
+              required
+              onChange={(e) =>
+                setFormData({ ...formData, from_name: e.target.value })
+              }
+              name="from_name"
+              value={formData.from_name}
               type="text"
               placeholder="Name"
               className="px-6 py-3 border-[2px] border-black text-black rounded-lg w-full"
             />
             <input
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              name="email"
+              value={formData.email}
               type="email"
               placeholder="Email"
               className="px-6 py-3 border-[2px] border-black text-black rounded-lg w-full"
             />
             <input
+              required
+              pattern="^0[0-9]{9}$"
+              title="please enter a valid phone number"
+              onChange={(e) =>
+                setFormData({ ...formData, contactNo: e.target.value })
+              }
+              name="contactNo"
+              value={formData.contactNo}
               type="text"
               placeholder="Phone Number"
               className=" focus:border-yellow-500 px-6 py-3 border-[2px] border-black text-black rounded-lg w-full"
             />
             <textarea
-              name=""
+              required
+              onChange={(e) =>
+                setFormData({ ...formData, message: e.target.value })
+              }
+              name="message"
+              value={formData.message}
               id=""
               rows="4"
               placeholder="your message"
@@ -87,6 +142,7 @@ const Contact = () => {
               SEND
             </motion.button>
           </motion.form>
+          <ToastContainer />
         </motion.div>
       </div>
     </div>
