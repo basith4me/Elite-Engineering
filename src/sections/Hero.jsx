@@ -27,14 +27,17 @@ const Hero = () => {
           variants={slideUpVariants}
           className="text-white uppercase text-[50px] font-bold"
         >
-          We will Build your Dream
+          Build Your Dream with us
         </motion.h1>
         <div className="w-[120px] h-[6px] bg-yellow-500"></div>
         <p className="text-white text-[20px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
-          facere vel perspiciatis iste aspernatur nemo blanditiis eveniet,
-          assumenda dolore cupiditate ratione exercitationem omnis placeat
-          aliquid non maiores incidunt quas quam.
+          At Elite Engineering, we specialize in delivering beautifully designed
+          homes and mini-building projects at an affordable cost. From the
+          initial concept to the finishing touches, our team of skilled experts
+          ensures that every detail is crafted to perfection. Whether you're
+          dreaming of a cozy home or a unique commercial space, we handle all
+          aspects of construction with precision and care, turning your vision
+          into reality—without breaking the bank.
         </p>
         <motion.div
           initial="hidden"
@@ -42,7 +45,7 @@ const Hero = () => {
           variants={zoomInVariants}
           className="flex justify-center items-center gap-5"
         >
-          <motion.button
+          {/* <motion.button
             variants={zoomInVariants}
             className="bg-yellow-500 hover:bg-white hover:text-black px-10 py-3 rounded-lg
              text-black font-bold duration-300 uppercase"
@@ -55,7 +58,7 @@ const Hero = () => {
           py-3 px-10 rounded-lg border-2 duration-300 uppercase"
           >
             Reach Us
-          </motion.button>
+          </motion.button> */}
         </motion.div>
       </motion.div>
       <div>

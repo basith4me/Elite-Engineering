@@ -14,14 +14,14 @@ import client1 from "../src/assets/client1.png";
 import client2 from "../src/assets/client2.png";
 import client3 from "../src/assets/client3.png";
 //project images
-import project1 from "../src/assets/project1.jpg"
-import project2 from "../src/assets/project2.jpg"
-import project3 from "../src/assets/project3.jpg"
-import project4 from "../src/assets/project4.jpg"
-import project5 from "../src/assets/project5.jpg"
-import project6 from "../src/assets/project6.jpg"
-import project7 from "../src/assets/project7.jpg"
-import project8 from "../src/assets/project8.jpg"
+import project1 from "../src/assets/project1.jpg";
+import project2 from "../src/assets/project2.jpg";
+import project3 from "../src/assets/project3.jpg";
+import project4 from "../src/assets/project4.jpg";
+import project5 from "../src/assets/project5.jpg";
+import project6 from "../src/assets/project6.jpg";
+import project7 from "../src/assets/project7.jpg";
+import project8 from "../src/assets/project8.jpg";
 
 export const allservices = [
   {
@@ -115,28 +115,27 @@ export const clients = [
 
 export const projects = [
   {
-    image: project1
+    image: project1,
   },
   {
-    image: project2
+    image: project2,
   },
   {
-    image: project3
+    image: project3,
   },
   {
-    image: project4
+    image: project4,
   },
   {
-    image: project5
+    image: project5,
   },
   {
-    image: project6
+    image: project6,
   },
   {
-    image: project7
+    image: project7,
   },
   {
-    image: project8
+    image: project8,
   },
-]
-
+];

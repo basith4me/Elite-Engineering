@@ -1,9 +1,12 @@
-import React, { useRef,useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { zoomInVariants, slideUpVariants } from "./animation";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import { PiPhoneCallLight } from "react-icons/pi";
+import { MdEmail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,16 +25,12 @@ const Contact = () => {
       })
       .then(
         () => {
-          toast.success("we will reach you soon");
+          toast.success("We will Reach you soon 😊");
         },
         (error) => {
           toast.error("server error");
         }
       );
-
-    // console.log(formData);
-
-    // toast.success("Thank you");
 
     setFormData({
       from_name: "",
@@ -41,7 +40,6 @@ const Contact = () => {
     });
   };
 
-  
   return (
     <div id="contact" className="bg-white">
       <div
@@ -73,6 +71,23 @@ const Contact = () => {
             incidunt quaerat repellendus accusamus suscipit voluptatibus magnam?
             Corporis autem ducimus ea!
           </p>
+          <div className="flex flex-col lg:flex-row lg:justify-between items-center gap-6 p-4">
+  <div className="flex items-center space-x-3">
+    <PiPhoneCallLight className="text-3xl" />
+    <p className="text-lg lg:text-xl">+94766703034</p>
+  </div>
+  
+  <div className="flex items-center space-x-3">
+    <MdEmail className="text-3xl" />
+    <p className="text-lg lg:text-xl">test@testy.com</p>
+  </div>
+  
+  <div className="flex items-center space-x-3">
+    <CiLocationOn className="text-3xl" />
+    <p className="text-lg lg:text-xl">Colombo</p>
+  </div>
+</div>
+
         </motion.div>
         <motion.div
           initial="hidden"

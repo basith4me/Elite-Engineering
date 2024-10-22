@@ -40,12 +40,20 @@ const Testimonials = () => {
               className="flex flex-col justify-center items-center "
             >
               <div className="border-2 border-white hover:bg-zinc-800 hover:border-white pb-[100px] pt-[30px] rounded-md duration-300">
-                <p className="text-white text-lg text-center">{item.about}</p>
+                <p className="text-white text-lg px-1 text-justify">{item.about}</p>
               </div>
               <div className="flex flex-col items-center justify-center gap-[5px]">
-                <img src={item.image} alt="client image" className="mt-[-50px]"/>
-                <h1 className="text-white font-semibold text-[27px]">{item.name}</h1>
-                <h1 className="text-yellow-500 text-[22px]">{item.post}</h1>
+                <img
+                  src={item.image}
+                  alt="client image"
+                  className="mt-[-50px]"
+                />
+                <h1 className="text-white font-semibold text-[27px]">
+                  {item.name}
+                </h1>
+                <h1 className="text-yellow-500 text-[22px]">
+                  {item.post}
+                </h1>
               </div>
             </div>
           ))}

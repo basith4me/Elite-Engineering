@@ -29,9 +29,30 @@ const About = () => {
         </motion.h1>
         <div className="w-[120px] h-[6px] bg-yellow-500"></div>
         <p className="text-3xl text-gray-50 mt-[60px]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
-          doloribus?
+          Elite Engineering is a rapidly growing construction company in Sri
+          Lanka, specializing in the design and construction of dream homes and
+          business establishments.
         </p>
+        <div className="flex flex-col lg:flex-row gap-5 ">
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+            <p className="text-black font-extrabold text-center text-[40px]">
+              50+
+            </p>
+            <span className="text-[20px] text-center">Undertaken Projects</span>
+          </div>
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+            <p className="text-black font-extrabold text-center text-[40px]">
+              20+
+            </p>
+            <span className="text-[20px] text-center">Satisfied Clients</span>
+          </div>
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+            <p className="text-black font-extrabold text-center text-[40px]">
+              5+
+            </p>
+            <span className="text-[20px] text-center">Years of Experience</span>
+          </div>
+        </div>
       </motion.div>
       <motion.div
         initial="hidden"
@@ -40,17 +61,20 @@ const About = () => {
         className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6"
       >
         <p className="text-white text-lg text-justify">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eius ex
-          accusamus totam odit vel nisi laudantium, tempora perspiciatis in
-          dolore ab vero blanditiis voluptatem magnam delectus ut molestiae
-          ipsum expedita asperiores fuga necessitatibus id facilis laborum.
-          Corrupti quae ea tenetur illo unde ipsam fugiat debitis libero in
-          voluptate, sint quas maiores porro impedit magni id reprehenderit,
-          accusamus ullam dolore numquam eius voluptatem deleniti? Fugit
-          repellendus quae officiis fuga totam commodi doloremque ex voluptates
-          provident facilis! Velit qui dolorum neque et, sequi asperiores quod
-          officiis magnam obcaecati? Dolores, perferendis laboriosam? Nam magnam
-          unde, placeat quibusdam pariatur vitae esse facilis illum!
+          Established in 2019, Elite Engineering is a forward-thinking
+          construction company founded by Mr. Muneer, a dynamic young
+          entrepreneur with a mission to make dream homes and business
+          establishments a reality at an affordable cost.
+          <p className="text-white text-lg text-justify py-2">
+            Our expert team manages every aspect of the construction process,
+            ensuring seamless execution from concept to completion. We are
+            committed to delivering high-quality projects that exceed client
+            expectations, with customer satisfaction at the heart of everything
+            we do.
+          </p>
+          Operating nationwide, Elite Engineering caters to individuals and
+          businesses seeking reliable and innovative construction solutions for
+          homes and commercial spaces.
         </p>
         <motion.button
           variants={zoomInVariants}
