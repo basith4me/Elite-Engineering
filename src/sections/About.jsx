@@ -33,20 +33,20 @@ const About = () => {
           Lanka, specializing in the design and construction of dream homes and
           business establishments.
         </p>
-        <div className="flex flex-col lg:flex-row gap-5 ">
-          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+        <div className="flex flex-col lg:flex-row gap-5 justify-center items-center w-full">
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded w-full">
             <p className="text-black font-extrabold text-center text-[40px]">
               50+
             </p>
             <span className="text-[20px] text-center">Undertaken Projects</span>
           </div>
-          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded w-full">
             <p className="text-black font-extrabold text-center text-[40px]">
               20+
             </p>
             <span className="text-[20px] text-center">Satisfied Clients</span>
           </div>
-          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded">
+          <div className="bg-yellow-500 flex flex-col px-10 py-2 rounded w-full">
             <p className="text-black font-extrabold text-center text-[40px]">
               5+
             </p>
