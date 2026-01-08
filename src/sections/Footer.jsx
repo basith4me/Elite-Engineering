@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex items-center justify-center text-white bg-black gap-2 p-5">
         <FaCopyright className="fill-yellow-500 lg:size-5 size-8" />
         <p className="text-lg text-center">
-          Copyright 2024 , all rights reserved to elite engineering
+          Copyright 2024 , all rights reserved to Elite Engineering
         </p>
         <div className="bg-yellow-500 text-black p-3 rounded-full hover:bg-black hover:text-white cursor-pointer lg:bottom-6 fixed bottom-6 right-6">
           <Link to="hero" spy={true} offset={-100} smooth={true}>
