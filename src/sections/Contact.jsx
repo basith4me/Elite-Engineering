@@ -76,9 +76,9 @@ const Contact = () => {
           </motion.h1>
           <div className="w-[120px] h-1 bg-yellow-500 rounded"></div>
           <p className="text-lg text-slate-600 leading-relaxed max-w-md">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
-            incidunt quaerat repellendus accusamus suscipit voluptatibus magnam?
-            Corporis autem ducimus ea!
+            Reach out to discuss your next construction, renovation, or design
+            project. Our team is ready to provide guidance, answer questions,
+            and help you move forward with confidence.
           </p>
           <div className="flex flex-col gap-4 mt-4 w-full">
   <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-slate-50 transition">

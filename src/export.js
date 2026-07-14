@@ -28,37 +28,37 @@ export const allservices = [
     icon: building,
     title: "BUILDING RENOVATION",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Upgrade older structures with safe, efficient renovation work that improves function, appearance, and long-term value.",
   },
   {
     icon: construction,
     title: "CONSTRUCTION SERVICES",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Deliver reliable construction solutions from foundation to finishing with quality workmanship and on-site coordination.",
   },
   {
     icon: design,
     title: "DESIGN & PLANNING",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Plan projects carefully with practical designs, clear timelines, and build-ready details that keep work moving forward.",
   },
   {
     icon: document,
     title: "DOCUMENTATION",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Handle permits, drawings, and project records so every stage stays organized, compliant, and easy to track.",
   },
   {
     icon: paint,
     title: "INTERIOR DESIGN",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Create clean, functional interiors that match the project’s purpose, style, and budget.",
   },
   {
     icon: support,
     title: "CUSTOMER SUPPORT",
     about:
-      "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Stay available with responsive project support, clear communication, and timely updates from start to finish.",
   },
 ];
 
@@ -67,25 +67,25 @@ export const planning = [
     icon: IoDocumentTextSharp,
     title: "planning",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "We review site needs, budgets, and timelines to create a practical roadmap before construction begins.",
   },
   {
     icon: MdOutlineDesignServices,
     title: "design",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Our design phase turns project goals into buildable plans with smart layouts and material selection.",
   },
   {
     icon: FaRegBuilding,
     title: "building",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Skilled crews carry out the build with attention to safety, precision, and consistent quality.",
   },
   {
     icon: FaSitemap,
     title: "finish",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "We complete the final details, inspections, and handover so the finished space is ready to use.",
   },
 ];
 
@@ -94,21 +94,21 @@ export const clients = [
     image: client1,
     name: "Alex Parker",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Elite Engineering managed our renovation with clear communication, steady progress, and a finished result that exceeded expectations.",
     post: "Constructor",
   },
   {
     image: client2,
     name: "Drew James",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "Their planning and design approach made the whole project smooth, efficient, and easy to manage.",
     post: "Architect",
   },
   {
     image: client3,
     name: "Sam Peterson",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus",
+      "The team delivered solid workmanship, stayed on schedule, and kept us updated at every stage.",
     post: "Builder",
   },
 ];
